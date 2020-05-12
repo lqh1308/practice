@@ -8,6 +8,7 @@ public class SemaphoreExample {
     private static ExecutorService exec = Executors.newCachedThreadPool();
 
     public static void main(String[] args) {
+        System.out.println("这是我第一次提交");
         final Semaphore semaphore = new Semaphore(5);
         for(int i = 0; i < 20; i++) {
             Runnable run = new Runnable() {
